@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb", "NYCJobsWeb\NYCJobsWeb.csproj", "{0380803A-C243-4F18-BD41-2C1D65296C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb.Tests", "NYCJobsWeb.Tests\NYCJobsWeb.Tests.csproj", "{5E3787D4-E54A-40A9-8C93-B7D8E725B40F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb.AcceptanceTests", "NYCJobsWeb.AcceptanceTests\NYCJobsWeb.AcceptanceTests.csproj", "{1C6E343D-BE70-42EC-9F0E-9A825E3CB9F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A0C5C43C-DF39-491D-9935-276B1E280B7A}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\chromedriver.exe = Tools\chromedriver.exe
+		Tools\phantomjs.exe = Tools\phantomjs.exe
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0380803A-C243-4F18-BD41-2C1D65296C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0380803A-C243-4F18-BD41-2C1D65296C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0380803A-C243-4F18-BD41-2C1D65296C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0380803A-C243-4F18-BD41-2C1D65296C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3787D4-E54A-40A9-8C93-B7D8E725B40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3787D4-E54A-40A9-8C93-B7D8E725B40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3787D4-E54A-40A9-8C93-B7D8E725B40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3787D4-E54A-40A9-8C93-B7D8E725B40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6E343D-BE70-42EC-9F0E-9A825E3CB9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6E343D-BE70-42EC-9F0E-9A825E3CB9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6E343D-BE70-42EC-9F0E-9A825E3CB9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6E343D-BE70-42EC-9F0E-9A825E3CB9F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0C5C43C-DF39-491D-9935-276B1E280B7A} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
+	EndGlobalSection
+EndGlobal

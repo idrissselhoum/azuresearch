@@ -373,7 +373,9 @@
         var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         ];
         $("#available-jobs-label").html('Available Jobs <small>(' + data.Count + " jobs)</small>");
-        $("#jobs-count").html(data.Count);
+
+        $("#jobs-count").html(0);
+        //$("#jobs-count").html(data.Count);
 
         $("#available_jobs_subheader").html(data.Count + ' Available Jobs');
 

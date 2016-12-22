@@ -28,7 +28,7 @@ namespace NYCJobsWeb.AcceptanceTests.Pages
             {
                 //TODO: update this code to return the number of results 
                 int value = 0;
-                var result = int.TryParse(Driver.FindElement(By.Id("JobsCounter")).Text, out value);
+                var result = int.TryParse(Driver.FindElement(By.Id("jobs-count")).Text, out value);
                 return result ? value : 0;
             }
         }

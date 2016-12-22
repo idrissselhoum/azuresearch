@@ -10,7 +10,7 @@ namespace NYCJobsWeb.AcceptanceTests.Pages
     public class HomePage : SeleniumPage
     {
 
-        public static readonly string Url = "http://rdnycjobs-staging.azurewebsites.net/";
+        public static readonly string Url = "http://devopstrainingdev.azurewebsites.net/";
 
         public HomePage(IWebDriver driver) : base(driver)
         {

@@ -26,11 +26,10 @@ namespace NYCJobsWeb.AcceptanceTests.Pages
         {
             get
             {
-                return 0;
                 //TODO: update this code to return the number of results 
-                //int value = 0;
-                //var result = int.TryParse(Driver.FindElement(By.Id("JobsCounter")).Text, out value);
-                //return result ? value : 0;
+                int value = 0;
+                var result = int.TryParse(Driver.FindElement(By.Id("JobsCounter")).Text, out value);
+                return result ? value : 0;
             }
         }
 

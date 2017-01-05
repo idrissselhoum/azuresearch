@@ -17,6 +17,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A0C5C43C
 		Tools\phantomjs.exe = Tools\phantomjs.exe
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{6E7D42E5-A956-46CD-A898-246379595FA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevopsTrainingAdvanced", "DevopsTrainingAdvanced", "{A033447D-ECF4-418B-B163-B8A4370C37F9}"
+	ProjectSection(SolutionItems) = preProject
+		Azure\DevopsTrainingAdvanced\parameters.json = Azure\DevopsTrainingAdvanced\parameters.json
+		Azure\DevopsTrainingAdvanced\template.json = Azure\DevopsTrainingAdvanced\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevopsTrainingAdvancedLab", "DevopsTrainingAdvancedLab", "{03335927-2999-456D-AF84-51D0AC8845D4}"
+	ProjectSection(SolutionItems) = preProject
+		Azure\DevopsTrainingAdvancedLab\parameters.json = Azure\DevopsTrainingAdvancedLab\parameters.json
+		Azure\DevopsTrainingAdvancedLab\template.json = Azure\DevopsTrainingAdvancedLab\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOpsTraining_20150105_Team1", "DevOpsTraining_20150105_Team1", "{58231B35-2BB6-4C58-873B-F99C56884E23}"
+	ProjectSection(SolutionItems) = preProject
+		Azure\DevOpsTraining_20150105_Team1\parameters.json = Azure\DevOpsTraining_20150105_Team1\parameters.json
+		Azure\DevOpsTraining_20150105_Team1\template.json = Azure\DevOpsTraining_20150105_Team1\template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{081EF7B8-E2E4-4EA3-8044-F90BC8E10868}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\SetAzureWebsite.ps1 = Deploy\SetAzureWebsite.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,5 +66,10 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A0C5C43C-DF39-491D-9935-276B1E280B7A} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
+		{6E7D42E5-A956-46CD-A898-246379595FA9} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
+		{A033447D-ECF4-418B-B163-B8A4370C37F9} = {6E7D42E5-A956-46CD-A898-246379595FA9}
+		{03335927-2999-456D-AF84-51D0AC8845D4} = {6E7D42E5-A956-46CD-A898-246379595FA9}
+		{58231B35-2BB6-4C58-873B-F99C56884E23} = {6E7D42E5-A956-46CD-A898-246379595FA9}
+		{081EF7B8-E2E4-4EA3-8044-F90BC8E10868} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 	EndGlobalSection
 EndGlobal

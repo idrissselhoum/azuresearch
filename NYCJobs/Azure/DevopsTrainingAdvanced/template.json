@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "components_accdevopstraining_name": {
+            "defaultValue": "accdevopstraining",
+            "type": "String"
+        },
+        "serverfarms_SPDevOpsTraining_name": {
+            "defaultValue": "SPDevOpsTraining",
+            "type": "String"
+        },
+        "sites_accdevopstraining_name": {
+            "defaultValue": "accdevopstraining",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/microsoft.insights/components/accdevopstraining'.",
+            "type": "microsoft.insights/components",
+            "kind": "web",
+            "name": "[parameters('components_accdevopstraining_name')]",
+            "apiVersion": "2014-04-01",
+            "location": "northeurope",
+            "tags": {
+                "hidden-link:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/sites/accdevopstraining": "Resource"
+            },
+            "properties": {
+                "ApplicationId": "[parameters('components_accdevopstraining_name')]"
+            },
+            "resources": [],
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining'.",
+            "type": "Microsoft.Web/serverfarms",
+            "sku": {
+                "name": "S1",
+                "tier": "Standard",
+                "size": "S1",
+                "family": "S",
+                "capacity": 1
+            },
+            "kind": "app",
+            "name": "[parameters('serverfarms_SPDevOpsTraining_name')]",
+            "apiVersion": "2015-08-01",
+            "location": "North Europe",
+            "properties": {
+                "name": "[parameters('serverfarms_SPDevOpsTraining_name')]",
+                "numberOfWorkers": 1
+            },
+            "resources": [],
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/sites/accdevopstraining'.",
+            "type": "Microsoft.Web/sites",
+            "kind": "app",
+            "name": "[parameters('sites_accdevopstraining_name')]",
+            "apiVersion": "2015-08-01",
+            "location": "North Europe",
+            "tags": {
+                "hidden-related:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining": "empty"
+            },
+            "properties": {
+                "name": "[parameters('sites_accdevopstraining_name')]",
+                "hostNames": [
+                    "accdevopstraining.azurewebsites.net"
+                ],
+                "enabledHostNames": [
+                    "accdevopstraining.azurewebsites.net",
+                    "accdevopstraining.scm.azurewebsites.net"
+                ],
+                "hostNameSslStates": [
+                    {
+                        "name": "[concat(parameters('sites_accdevopstraining_name'),'.azurewebsites.net')]",
+                        "sslState": 0,
+                        "thumbprint": null,
+                        "ipBasedSslState": 0
+                    },
+                    {
+                        "name": "[concat(parameters('sites_accdevopstraining_name'),'.scm.azurewebsites.net')]",
+                        "sslState": 0,
+                        "thumbprint": null,
+                        "ipBasedSslState": 0
+                    }
+                ],
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SPDevOpsTraining_name'))]"
+            },
+            "resources": [],
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_SPDevOpsTraining_name'))]"
+            ]
+        }
+    ]
+}

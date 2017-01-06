@@ -15,12 +15,14 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
     using TechTalk.SpecFlow;
     
     
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class SearchJobFeature
     {
-        
+
+        private static Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
 #line 1 "SearchJob.feature"
@@ -33,6 +35,7 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SearchJob", "\tIn order to find a new job\r\n\tas an employee\r\n\tI want to search the available job" +
                     "s based on my request", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
+            _testContext = testContext;
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
@@ -61,6 +64,7 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
+            testRunner.ScenarioContext.Add("MSTestContext", _testContext);
         }
         
         public virtual void ScenarioCleanup()

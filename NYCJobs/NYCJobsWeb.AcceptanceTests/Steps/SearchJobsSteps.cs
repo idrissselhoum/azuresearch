@@ -25,6 +25,14 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         protected string DriversFolder { get; set; }
 
 
+        public string GetTestProperty(string propertyName)
+        {
+            var context = ScenarioContext.Current["MSTestContext"] as TestContext;
+
+            var result = context?.Properties[propertyName] as string;
+            return result;
+        }
+
         [BeforeScenario]
         public void InitScenario()
         {
@@ -53,7 +61,9 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         [Given(@"I navigate on the home page")]
         public void GivenINavigateOnTheHomePage()
         {
-            Page = new HomePage(_driver);
+            string appUrl = GetTestProperty("appUrl");
+            Page = new HomePage(_driver, appUrl);
+
             Page.GoTo();
             Check.That("Azure Search - Job Portal Demo").Equals(_driver.Title);
         }

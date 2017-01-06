@@ -10,10 +10,11 @@ namespace NYCJobsWeb.AcceptanceTests.Pages
     public class HomePage : SeleniumPage
     {
 
-        public static readonly string Url = "http://devopstrainingdev.azurewebsites.net/";
+        public static string Url { get; set; }
 
-        public HomePage(IWebDriver driver) : base(driver)
+        public HomePage(IWebDriver driver, string url) : base(driver)
         {
+            Url = url;
         }
 
         public HomePage GoTo()

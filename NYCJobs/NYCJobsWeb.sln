@@ -42,6 +42,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{081EF7
 		Deploy\SetAzureWebsite.ps1 = Deploy\SetAzureWebsite.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7870D437-A7DE-4FEB-B379-E26202AF9FE3}"
+	ProjectSection(SolutionItems) = preProject
+		NYCJobsWeb.AcceptanceTests.runsettings = NYCJobsWeb.AcceptanceTests.runsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,5 +76,6 @@ Global
 		{03335927-2999-456D-AF84-51D0AC8845D4} = {6E7D42E5-A956-46CD-A898-246379595FA9}
 		{58231B35-2BB6-4C58-873B-F99C56884E23} = {6E7D42E5-A956-46CD-A898-246379595FA9}
 		{081EF7B8-E2E4-4EA3-8044-F90BC8E10868} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
+		{7870D437-A7DE-4FEB-B379-E26202AF9FE3} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 	EndGlobalSection
 EndGlobal

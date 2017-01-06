@@ -44,7 +44,7 @@
         "properties": {
           "name": "[parameters('site_name')]",
           "hostNames": [
-            "[parameters('site_name')].azurewebsites.net"
+            "[concat(parameters('site_name'),'.azurewebsites.net')]"
           ],
           "enabledHostNames": [
             "[concat(parameters('site_name'),'.azurewebsites.net')]",

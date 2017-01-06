@@ -2,64 +2,53 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
   "parameters": {
-    "components_accdevopstraininglab_name": {
-      "defaultValue": "accdevopstraininglab",
+    "appinsight_name": {
       "type": "String"
     },
     "site_name": {
-      "defaultValue": "accdevopstraininglab",
       "type": "String"
     },
-    "sites_accdevopstraininglab_serverFarmId": {
-      "defaultValue": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavancedLab/providers/Microsoft.Web/serverfarms/SPDevOpsTraining",
+    "serverFarmId": {
       "type": "String"
     },
     "sites_stagingslotname": {
       "defaultValue": "staging",
       "type": "String"
-    },
-    "sites_location": {
-      "defaultValue": "North Europe",
-      "type": "String"
     }
-
   },
     "variables": {},
     "resources": [
       {
-        "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdvancedLab/providers/microsoft.insights/components/accdevopstraininglab'.",
+        "comments": "",
         "type": "microsoft.insights/components",
         "kind": "web",
-        "name": "[parameters('components_accdevopstraininglab_name')]",
+        "name": "[parameters('appinsight_name')]",
         "apiVersion": "2014-04-01",
-        "location": "[parameters('sites_location')]",
-        "tags": {
-          "hidden-link:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdvancedLab/providers/Microsoft.Web/sites/accdevopstraininglab": "Resource"
-        },
+        "location": "[resourceGroup().location]",
+        "tags": { },
         "properties": {
-          "ApplicationId": "[parameters('components_accdevopstraininglab_name')]"
+          "ApplicationId": "[parameters('appinsight_name')]"
         },
         "resources": [],
         "dependsOn": []
       },
       {
-        "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdvancedLab/providers/Microsoft.Web/sites/accdevopstraininglab'.",
+        "comments": "",
         "type": "Microsoft.Web/sites",
         "kind": "app",
         "name": "[parameters('site_name')]",
         "apiVersion": "2015-08-01",
-        "location": "North Europe",
+        "location": "[resourceGroup().location]",
         "tags": {
-          "hidden-related:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/RG_DevOpsTrainingAdavancedLab/providers/Microsoft.Web/serverfarms/SPDevOpsTraining": "empty"
         },
         "properties": {
           "name": "[parameters('site_name')]",
           "hostNames": [
-            "accdevopstraininglab.azurewebsites.net"
+            "[parameters('site_name')].azurewebsites.net"
           ],
           "enabledHostNames": [
-            "accdevopstraininglab.azurewebsites.net",
-            "accdevopstraininglab.scm.azurewebsites.net"
+            "[concat(parameters('site_name'),'.azurewebsites.net')]",
+            "[concat(parameters('site_name'),'.scm.azurewebsites.net')]"
           ],
           "hostNameSslStates": [
             {
@@ -75,14 +64,14 @@
               "ipBasedSslState": 0
             }
           ],
-          "serverFarmId": "[parameters('sites_accdevopstraininglab_serverFarmId')]"
+          "serverFarmId": "[parameters('serverFarmId')]"
         },
         "resources": [
           {
             "apiVersion": "2015-08-01",
             "name": "[parameters('sites_stagingslotname')]",
             "type": "slots",
-            "location": "[parameters('sites_location')]",
+            "location": "[resourceGroup().location]",
             "dependsOn": [
               "[resourceId('Microsoft.Web/Sites', parameters('site_name'))]"
             ],

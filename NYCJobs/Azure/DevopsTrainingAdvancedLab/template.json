@@ -2,25 +2,25 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
   "parameters": {
+    "serverfarm_name": {
+      "type": "string"
+    },
     "appinsight_name": {
-      "type": "String"
+      "type": "string"
     },
     "site_name": {
-      "type": "String"
-    },
-    "serverFarmId": {
-      "type": "String"
+      "type": "string"
     },
     "sites_stagingslotname": {
       "defaultValue": "staging",
-      "type": "String"
+      "type": "string"
     }
   },
     "variables": {},
     "resources": [
       {
         "comments": "",
-        "type": "microsoft.insights/components",
+        "type": "Microsoft.Insights/components",
         "kind": "web",
         "name": "[parameters('appinsight_name')]",
         "apiVersion": "2014-04-01",
@@ -64,7 +64,7 @@
               "ipBasedSslState": 0
             }
           ],
-          "serverFarmId": "[parameters('serverFarmId')]"
+          "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarm_name'))]",
         },
         "resources": [
           {

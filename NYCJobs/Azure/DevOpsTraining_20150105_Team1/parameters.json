@@ -1,15 +1,18 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "components_accdevopstraining20170105_T1_name": {
-            "value": null
-        },
-        "sites_accdevopstraining20170105_T1_name": {
-            "value": null
-        },
-        "sites_accdevopstraining20170105_T1_serverFarmId": {
-            "value": null
-        }
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serverfarm_name": {
+      "value": "SPDevOpsTraining"
+    },
+    "appinsight_name": {
+      "value": "accdevopstraining20170105T1"
+    },
+    "site_name": {
+      "value": "accdevopstraining20170105T1"
+    },
+    "sites_stagingslotname": {
+      "value": "staging"
     }
+  }
 }

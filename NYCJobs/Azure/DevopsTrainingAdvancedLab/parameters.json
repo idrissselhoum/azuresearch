@@ -2,14 +2,14 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "serverfarm_name": {
+      "value": "SPDevOpsTraining"
+    },
     "appinsight_name": {
       "value": "accdevopstraininglab"
     },
     "site_name": {
       "value": "accdevopstraininglab"
-    },
-    "serverFarmId": {
-      "value": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining"
     },
     "sites_stagingslotname": {
       "value": "staging"

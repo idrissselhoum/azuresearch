@@ -1,75 +1,86 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "components_accdevopstraining20170105_T1_name": {
-            "defaultValue": "accdevopstraining20170105-T1",
-            "type": "String"
-        },
-        "sites_accdevopstraining20170105_T1_name": {
-            "defaultValue": "accdevopstraining20170105-T1",
-            "type": "String"
-        },
-        "sites_accdevopstraining20170105_T1_serverFarmId": {
-            "defaultValue": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining",
-            "type": "String"
-        }
+  "parameters": {
+    "serverfarm_name": {
+      "type": "string"
     },
+    "appinsight_name": {
+      "type": "string"
+    },
+    "site_name": {
+      "type": "string"
+    },
+    "sites_stagingslotname": {
+      "defaultValue": "staging",
+      "type": "string"
+    }
+  },
     "variables": {},
     "resources": [
-        {
-            "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTraining_20170105_Team1/providers/microsoft.insights/components/accdevopstraining20170105-T1'.",
-            "type": "microsoft.insights/components",
-            "kind": "web",
-            "name": "[parameters('components_accdevopstraining20170105_T1_name')]",
-            "apiVersion": "2014-04-01",
-            "location": "northeurope",
-            "tags": {
-                "hidden-link:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTraining_20170105_Team1/providers/Microsoft.Web/sites/accdevopstraining20170105-T1": "Resource"
-            },
-            "properties": {
-                "ApplicationId": "[parameters('components_accdevopstraining20170105_T1_name')]"
-            },
-            "resources": [],
-            "dependsOn": []
+      {
+        "comments": "",
+        "type": "Microsoft.Insights/components",
+        "kind": "web",
+        "name": "[parameters('appinsight_name')]",
+        "apiVersion": "2014-04-01",
+        "location": "[resourceGroup().location]",
+        "tags": { },
+        "properties": {
+          "ApplicationId": "[parameters('appinsight_name')]"
         },
-        {
-            "comments": "Generalized from resource: '/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTraining_20170105_Team1/providers/Microsoft.Web/sites/accdevopstraining20170105-T1'.",
-            "type": "Microsoft.Web/sites",
-            "kind": "app",
-            "name": "[parameters('sites_accdevopstraining20170105_T1_name')]",
+        "resources": [],
+        "dependsOn": []
+      },
+      {
+        "comments": "",
+        "type": "Microsoft.Web/sites",
+        "kind": "app",
+        "name": "[parameters('site_name')]",
+        "apiVersion": "2015-08-01",
+        "location": "[resourceGroup().location]",
+        "tags": {
+        },
+        "properties": {
+          "name": "[parameters('site_name')]",
+          "hostNames": [
+            "[concat(parameters('site_name'),'.azurewebsites.net')]"
+          ],
+          "enabledHostNames": [
+            "[concat(parameters('site_name'),'.azurewebsites.net')]",
+            "[concat(parameters('site_name'),'.scm.azurewebsites.net')]"
+          ],
+          "hostNameSslStates": [
+            {
+              "name": "[concat(parameters('site_name'),'.azurewebsites.net')]",
+              "sslState": 0,
+              "thumbprint": null,
+              "ipBasedSslState": 0
+            },
+            {
+              "name": "[concat(parameters('site_name'),'.scm.azurewebsites.net')]",
+              "sslState": 0,
+              "thumbprint": null,
+              "ipBasedSslState": 0
+            }
+          ],
+          "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarm_name'))]",
+        },
+        "resources": [
+          {
             "apiVersion": "2015-08-01",
-            "location": "North Europe",
-            "tags": {
-                "hidden-related:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining": "empty"
-            },
-            "properties": {
-                "name": "[parameters('sites_accdevopstraining20170105_T1_name')]",
-                "hostNames": [
-                    "accdevopstraining20170105-t1.azurewebsites.net"
-                ],
-                "enabledHostNames": [
-                    "accdevopstraining20170105-t1.azurewebsites.net",
-                    "accdevopstraining20170105-t1.scm.azurewebsites.net"
-                ],
-                "hostNameSslStates": [
-                    {
-                        "name": "[concat(parameters('sites_accdevopstraining20170105_T1_name'),'accdevopstraining20170105-t1.azurewebsites.net')]",
-                        "sslState": 0,
-                        "thumbprint": null,
-                        "ipBasedSslState": 0
-                    },
-                    {
-                        "name": "[concat(parameters('sites_accdevopstraining20170105_T1_name'),'accdevopstraining20170105-t1.scm.azurewebsites.net')]",
-                        "sslState": 0,
-                        "thumbprint": null,
-                        "ipBasedSslState": 0
-                    }
-                ],
-                "serverFarmId": "[parameters('sites_accdevopstraining20170105_T1_serverFarmId')]"
-            },
-            "resources": [],
-            "dependsOn": []
-        }
+            "name": "[parameters('sites_stagingslotname')]",
+            "type": "slots",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+              "[resourceId('Microsoft.Web/Sites', parameters('site_name'))]"
+            ],
+            "properties": {},
+            "resources": [
+            ]
+          }
+        ],
+        "dependsOn": []
+      }
     ]
 }

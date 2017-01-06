@@ -39,8 +39,10 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
             DriversFolder = Directory.GetCurrentDirectory() + @"\Tools";
             try
             {
-                //_driver = new PhantomJSDriver(DriversFolder);
-                _driver = new ChromeDriver(DriversFolder);
+                //Only PhantomJSDriver can be used with VSTS Hosted agent
+                _driver = new PhantomJSDriver(DriversFolder);
+                
+                //_driver = new ChromeDriver(DriversFolder);
 
                 _driver.Manage().Window.Size = new Size(1024, 768);
             }

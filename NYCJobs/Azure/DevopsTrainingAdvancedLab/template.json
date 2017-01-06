@@ -11,7 +11,7 @@
             "type": "String"
         },
         "sites_accdevopstraininglab_serverFarmId": {
-            "defaultValue": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining",
+            "defaultValue": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdavancedLab/providers/Microsoft.Web/serverfarms/SPDevOpsTraining",
             "type": "String"
         }
     },
@@ -41,7 +41,7 @@
             "apiVersion": "2015-08-01",
             "location": "North Europe",
             "tags": {
-                "hidden-related:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/RG_DevOpsTrainingAdavanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining": "empty"
+                "hidden-related:/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/RG_DevOpsTrainingAdavancedLab/providers/Microsoft.Web/serverfarms/SPDevOpsTraining": "empty"
             },
             "properties": {
                 "name": "[parameters('sites_accdevopstraininglab_name')]",

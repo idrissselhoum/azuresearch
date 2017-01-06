@@ -5,9 +5,6 @@
     "serverFarmId": {
       "type": "string"
     },
-    "serverfarm_name": {
-      "type": "string"
-    },
     "appinsight_name": {
       "type": "string"
     },

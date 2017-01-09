@@ -25,13 +25,23 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         protected string DriversFolder { get; set; }
 
 
+        public string GetTestProperty(string propertyName)
+        {
+            var context = ScenarioContext.Current["MSTestContext"] as TestContext;
+
+            var result = context?.Properties[propertyName] as string;
+            return result;
+        }
+
         [BeforeScenario]
         public void InitScenario()
         {
             DriversFolder = Directory.GetCurrentDirectory() + @"\Tools";
             try
             {
+                //Only PhantomJSDriver can be used with VSTS Hosted agent
                 _driver = new PhantomJSDriver(DriversFolder);
+                
                 //_driver = new ChromeDriver(DriversFolder);
 
                 _driver.Manage().Window.Size = new Size(1024, 768);
@@ -53,7 +63,9 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         [Given(@"I navigate on the home page")]
         public void GivenINavigateOnTheHomePage()
         {
-            Page = new HomePage(_driver);
+            string appUrl = GetTestProperty("appUrl");
+            Page = new HomePage(_driver, appUrl);
+
             Page.GoTo();
             Check.That("Azure Search - Job Portal Demo").Equals(_driver.Title);
         }
@@ -76,8 +88,6 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         public void ThenTheResultShallReturnAtLeastJob(int p0)
         {
             Check.That(Page.JobsCount).IsGreaterThan(p0);
-
-            //TODO: check that the request returns more than 1 result
         }
 
     }

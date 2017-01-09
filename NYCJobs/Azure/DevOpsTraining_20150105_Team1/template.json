@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serverFarmId": {
+      "type": "string"
+    },
+    "appinsight_name": {
+      "type": "string"
+    },
+    "site_name": {
+      "type": "string"
+    },
+    "sites_stagingslotname": {
+      "defaultValue": "staging",
+      "type": "string"
+    }
+  },
+    "variables": {},
+  "resources": [
+    {
+      "comments": "",
+      "type": "Microsoft.Insights/components",
+      "kind": "web",
+      "name": "[parameters('appinsight_name')]",
+      "apiVersion": "2014-04-01",
+      "location": "[resourceGroup().location]",
+      "tags": {},
+      "properties": {
+        "ApplicationId": "[parameters('appinsight_name')]"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "",
+      "type": "Microsoft.Web/sites",
+      "kind": "app",
+      "name": "[parameters('site_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "[resourceGroup().location]",
+      "tags": {
+      },
+      "properties": {
+        "name": "[parameters('site_name')]",
+        "hostNames": [
+          "[concat(parameters('site_name'),'.azurewebsites.net')]"
+        ],
+        "enabledHostNames": [
+          "[concat(parameters('site_name'),'.azurewebsites.net')]",
+          "[concat(parameters('site_name'),'.scm.azurewebsites.net')]"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('site_name'),'.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('site_name'),'.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "serverFarmId": "[parameters('serverFarmId')]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-08-01",
+          "name": "[parameters('sites_stagingslotname')]",
+          "type": "slots",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('site_name'))]"
+          ],
+          "properties": {},
+          "resources": [
+          ]
+        }
+      ],
+      "dependsOn": []
+    }
+  ]
+}

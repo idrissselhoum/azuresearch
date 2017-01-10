@@ -1,4 +1,5 @@
-﻿using BingGeocoder;
+﻿using AzureSearchHelpers;
+using BingGeocoder;
 using NYCJobsWeb.Models;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace NYCJobsWeb.Controllers
     /// </summary>
     public class HomeController : Controller
     {
-        private JobsSearch _jobsSearch = new JobsSearch();
+        private JobsSearchHelper _jobsSearch = new JobsSearchHelper();
 
         // GET: Home
         public ActionResult Index()

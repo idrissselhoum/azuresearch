@@ -286,8 +286,10 @@
         if (totalPages < maxPage)
             maxPage = totalPages + 1;
         var backPage = parseInt(currentPage) - 1;
-        if (backPage < 1)
-            backPage = 1;
+
+        //TODO: For the first page, the back button returns an exception in AppInsight. Check the AppInsight portal
+        //if (backPage < 1)
+        //    backPage = 1;
         var forwardPage = parseInt(currentPage) + 1;
 
         var htmlString = '<li><a href="javascript:void(0)" onclick="GoToPage(\'' + backPage + '\')" class="fa fa-angle-left"></a></li>';
@@ -301,8 +303,6 @@
         htmlString += '<li><a href="javascript:void(0)" onclick="GoToPage(\'' + forwardPage + '\')" class="fa fa-angle-right"></a></li>';
         $("#pagination").html(htmlString);
         $("#paginationFooter").html(htmlString);
-
-
     }
 
     function GoToPage(page) {

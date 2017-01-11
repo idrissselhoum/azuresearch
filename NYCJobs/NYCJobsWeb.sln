@@ -39,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOpsTraining_20150105_Tea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{081EF7B8-E2E4-4EA3-8044-F90BC8E10868}"
 	ProjectSection(SolutionItems) = preProject
+		LifeCycleUpload.bat = LifeCycleUpload.bat
 		Deploy\SetAzureWebsite.ps1 = Deploy\SetAzureWebsite.ps1
 	EndProjectSection
 EndProject

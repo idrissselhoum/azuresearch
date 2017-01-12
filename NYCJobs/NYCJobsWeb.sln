@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb.AcceptanceTests"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}"
 	ProjectSection(SolutionItems) = preProject
-		Local.testsettings = Local.testsettings
+		PerformanceTestSettings.testsettings = PerformanceTestSettings.testsettings
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A0C5C43C-DF39-491D-9935-276B1E280B7A}"

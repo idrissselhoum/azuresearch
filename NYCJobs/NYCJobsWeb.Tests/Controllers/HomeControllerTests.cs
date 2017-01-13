@@ -18,13 +18,12 @@ namespace NYCJobsWeb.Controllers.Tests
         {
             controller = new HomeController();
         }
-        
+
 
         [TestMethod()]
         public void IndexTest()
         {
             controller.Index();
-            Assert.Inconclusive();
         }
 
         [TestMethod()]
@@ -44,8 +43,7 @@ namespace NYCJobsWeb.Controllers.Tests
         [TestMethod()]
         public void SuggestTest()
         {
-            //controller.Suggest("", true);
-            Assert.Inconclusive();
+            var result = controller.Suggest("Analyst", true);
         }
 
         [TestMethod()]

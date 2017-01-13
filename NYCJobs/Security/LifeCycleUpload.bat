@@ -9,6 +9,6 @@ echo %4
 echo %5
 echo %6
 
-java -jar %1 -i %2 -a <%3:%4> -s %5 %6
+java -jar %1 -i %2 -a ^<%3:%4^> -s %5 %6
 
 

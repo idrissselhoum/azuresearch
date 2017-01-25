@@ -3,7 +3,6 @@
 	as an employee
 	I want to search the available jobs based on my request
 
-
 @HomePage
 Scenario: search a new job
 	Given I navigate on the home page

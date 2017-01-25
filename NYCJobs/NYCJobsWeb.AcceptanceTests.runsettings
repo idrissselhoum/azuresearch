@@ -44,9 +44,8 @@
 
   <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
-    <Parameter name="appUrl" value="http://localhost" />
-    <!--<Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />-->
+    <!--<Parameter name="appUrl" value="http://localhost:51269/" />-->
+    <Parameter name="appUrl" value="http://accdevopstraininglab.azurewebsites.net/" />
   </TestRunParameters>
 
   <!-- Adapter Specific sections -->

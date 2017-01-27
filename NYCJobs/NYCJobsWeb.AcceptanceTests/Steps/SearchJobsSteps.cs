@@ -27,7 +27,7 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
 
         public string GetTestProperty(string propertyName)
         {
-            var context = ScenarioContext.Current["MSTestContext"] as TestContext;
+            var context = ScenarioContext.Current["TestContext"] as TestContext;
 
             var result = context?.Properties[propertyName] as string;
             return result;

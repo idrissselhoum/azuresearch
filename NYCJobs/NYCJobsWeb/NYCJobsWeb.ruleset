@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SonarQube - NYCJobsDemo Sonar way" ToolsVersion="14.0">
+  <Include Path="..\sonarqube\5a26cff9-d493-4787-a15a-307df38cada0csharp.ruleset" Action="Default" />
+</RuleSet>

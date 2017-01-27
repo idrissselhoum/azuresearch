@@ -18,7 +18,7 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
         //    Given I navigate on the home page
         //When I have entered Analyst in the request form and press search button
         //Then the result shall return at least 1 job
-        protected static IWebDriver _driver;
+        private static IWebDriver _driver;
         protected static HomePage Page;
 
 

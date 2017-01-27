@@ -20,9 +20,10 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class SearchJobFeature
     {
-
-        private static Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
+        
         private static TechTalk.SpecFlow.ITestRunner testRunner;
+        
+        private static Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
 #line 1 "SearchJob.feature"
 #line hidden
@@ -63,7 +64,7 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
-            testRunner.ScenarioContext.Add("MSTestContext", _testContext);
+            testRunner.ScenarioContext.Add("TestContext", _testContext);
         }
         
         public virtual void ScenarioCleanup()
@@ -79,13 +80,13 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("search a new job", new string[] {
                         "HomePage"});
-#line 8
+#line 7
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 8
  testRunner.Given("I navigate on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 9
  testRunner.When("I have entered Analyst in the request form and press search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
+#line 10
  testRunner.Then("the result shall return at least 1 job", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

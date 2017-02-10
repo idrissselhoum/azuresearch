@@ -10,7 +10,3 @@ Scenario: search a new job
 	Then the result shall return at least 1 job
 
 
-
-
-
-

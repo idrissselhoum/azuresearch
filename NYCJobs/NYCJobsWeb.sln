@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb", "NYCJobsWeb\NYCJobsWeb.csproj", "{0380803A-C243-4F18-BD41-2C1D65296C96}"
 EndProject
@@ -29,12 +29,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevopsTrainingAdvancedLab",
 	ProjectSection(SolutionItems) = preProject
 		Azure\DevopsTrainingAdvancedLab\parameters.json = Azure\DevopsTrainingAdvancedLab\parameters.json
 		Azure\DevopsTrainingAdvancedLab\template.json = Azure\DevopsTrainingAdvancedLab\template.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOpsTraining_20150105_Team1", "DevOpsTraining_20150105_Team1", "{58231B35-2BB6-4C58-873B-F99C56884E23}"
-	ProjectSection(SolutionItems) = preProject
-		Azure\DevOpsTraining_20150105_Team1\parameters.json = Azure\DevOpsTraining_20150105_Team1\parameters.json
-		Azure\DevOpsTraining_20150105_Team1\template.json = Azure\DevOpsTraining_20150105_Team1\template.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{081EF7B8-E2E4-4EA3-8044-F90BC8E10868}"
@@ -92,7 +86,6 @@ Global
 		{6E7D42E5-A956-46CD-A898-246379595FA9} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 		{A033447D-ECF4-418B-B163-B8A4370C37F9} = {6E7D42E5-A956-46CD-A898-246379595FA9}
 		{03335927-2999-456D-AF84-51D0AC8845D4} = {6E7D42E5-A956-46CD-A898-246379595FA9}
-		{58231B35-2BB6-4C58-873B-F99C56884E23} = {6E7D42E5-A956-46CD-A898-246379595FA9}
 		{081EF7B8-E2E4-4EA3-8044-F90BC8E10868} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 		{7870D437-A7DE-4FEB-B379-E26202AF9FE3} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 		{0C113F30-0ECD-4E0E-923E-1F0CB569DADF} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}

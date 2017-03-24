@@ -6,10 +6,10 @@
       "value": "/subscriptions/8e162b42-47e9-45ae-afcd-d6662a4a7383/resourceGroups/VS-acctraining-Group/providers/Microsoft.Web/serverfarms/ACCTrainingServicePlan"
     },
     "appinsight_name": {
-      "value": "accdevopstraininglab"
+      "value": "acctraininggou"
     },
     "site_name": {
-      "value": "accdevopstraininglab"
+      "value": "acctraininggou"
     },
     "sites_stagingslotname": {
       "value": "staging"

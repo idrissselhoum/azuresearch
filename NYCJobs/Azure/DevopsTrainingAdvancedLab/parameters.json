@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "serverFarmId": {
-      "value": "/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourceGroups/RG_DevOpsTrainingAdvanced/providers/Microsoft.Web/serverfarms/SPDevOpsTraining"
+      "value": "/subscriptions/8e162b42-47e9-45ae-afcd-d6662a4a7383/resourceGroups/VS-acctraining-Group/providers/Microsoft.Web/serverfarms/ACCTrainingServicePlan"
     },
     "appinsight_name": {
       "value": "accdevopstraininglab"

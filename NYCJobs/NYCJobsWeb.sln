@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb", "NYCJobsWeb\NYCJobsWeb.csproj", "{0380803A-C243-4F18-BD41-2C1D65296C96}"
 EndProject
@@ -41,18 +41,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7870D437
 		NYCJobsWeb.AcceptanceTests.runsettings = NYCJobsWeb.AcceptanceTests.runsettings
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{0C113F30-0ECD-4E0E-923E-1F0CB569DADF}"
-	ProjectSection(SolutionItems) = preProject
-		Security\LifeCycleUpload.bat = Security\LifeCycleUpload.bat
-		Security\sonatype-clm-sonarqube-1.0.4.jar = Security\sonatype-clm-sonarqube-1.0.4.jar
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCJobsWeb.PerformanceTests", "NYCJobsWeb.PerformanceTests\NYCJobsWeb.PerformanceTests.csproj", "{4A0CA30E-A71B-448E-8239-DAD2D9B9DEFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{392B01F3-041D-43D4-86A6-88F245720C41}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packaging", "Packaging", "{82F1CFFF-FA2F-45EB-ACA4-6C81F2613E85}"
 	ProjectSection(SolutionItems) = preProject
-		SonarQube\5a26cff9-d493-4787-a15a-307df38cada0CSharp.ruleset = SonarQube\5a26cff9-d493-4787-a15a-307df38cada0CSharp.ruleset
-		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
+		Packaging\packaging.ps1 = Packaging\packaging.ps1
 	EndProjectSection
 EndProject
 Global
@@ -88,6 +81,6 @@ Global
 		{03335927-2999-456D-AF84-51D0AC8845D4} = {6E7D42E5-A956-46CD-A898-246379595FA9}
 		{081EF7B8-E2E4-4EA3-8044-F90BC8E10868} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 		{7870D437-A7DE-4FEB-B379-E26202AF9FE3} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
-		{0C113F30-0ECD-4E0E-923E-1F0CB569DADF} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
+		{82F1CFFF-FA2F-45EB-ACA4-6C81F2613E85} = {47728E36-BDD2-4D6C-9BD7-6398A93B7FD5}
 	EndGlobalSection
 EndGlobal

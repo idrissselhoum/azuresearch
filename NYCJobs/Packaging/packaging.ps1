@@ -25,7 +25,7 @@ If (Test-Path $TargetFolder -PathType Container)
 	Copy-item "$SourceFolder\NYCJobs\Deploy\" -Destination $TargetFolder\Deploy -Recurse
 
 	Write-Host "Copy Performance Tests" -ForegroundColor Green
-	Copy-item "$SourceFolder\NYCJobs\PerformanceTests\" -Destination $TargetFolder\PerformanceTests -Recurse
+	Copy-item "$SourceFolder\NYCJobs\NYCJobsWeb.PerformanceTests\" -Destination $TargetFolder\PerformanceTests -Recurse
 }
 Else
 {

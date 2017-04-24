@@ -23,10 +23,22 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private static Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
+        private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
 #line 1 "SearchJob.feature"
 #line hidden
+        
+        public Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
+        {
+            get
+            {
+                return this._testContext;
+            }
+            set
+            {
+                this._testContext = value;
+            }
+        }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
@@ -35,7 +47,6 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SearchJob", "\tIn order to find a new job\r\n\tas an employee\r\n\tI want to search the available job" +
                     "s based on my request", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
-            _testContext = testContext;
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
@@ -64,7 +75,7 @@ namespace NYCJobsWeb.AcceptanceTests.Specs
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
-            testRunner.ScenarioContext.Add("TestContext", _testContext);
+            testRunner.ScenarioContext.Add("TestContext", TestContext);
         }
         
         public virtual void ScenarioCleanup()

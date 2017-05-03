@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "serverFarmId": {
-      "value": "/subscriptions/8e162b42-47e9-45ae-afcd-d6662a4a7383/resourceGroups/VS-acctraining-Group/providers/Microsoft.Web/serverfarms/ACCTrainingServicePlan"
+      "value": "/subscriptions/8e162b42-47e9-45ae-afcd-d6662a4a7383/resourceGroups/AccTraining5/providers/Microsoft.Web/serverfarms/ACCTrainingServicePlan"
     },
     "appinsight_name": {
-      "value": "acctraininggou"
+      "value": "acctrainingrco"
     },
     "site_name": {
-      "value": "acctraininggou"
+      "value": "acctrainingrco"
     },
     "sites_stagingslotname": {
       "value": "staging"

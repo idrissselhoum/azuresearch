@@ -5,6 +5,6 @@
   </RunConfiguration>
   <TestRunParameters>
     <!--<Parameter name="appUrl" value="http://localhost:51269/" />-->
-    <Parameter name="appUrl" value="http://accdevopstraininglab.azurewebsites.net/" />
+    <Parameter name="appUrl" value="http://acctraininggou.azurewebsites.net/" />
   </TestRunParameters>
 </RunSettings>

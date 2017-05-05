@@ -1,9 +1,9 @@
 param (
-   [string] $AzureWebsiteName = "FridersLab",
-   [string] $slot = "Staging",
-   [hashtable] $appsettings =  @{"FacebookAppId" = "1"; "FacebookAppSecret" = "2"},
-   [string] $subscriptionName = "",
-   [string] $ResourceGroupName = "FridersLabRG"
+   [string] $AzureWebsiteName,
+   [string] $slot,
+   [hashtable] $appsettings,
+   [string] $subscriptionName,
+   [string] $ResourceGroupName
 )
 
 #Login-AzureRmAccount

@@ -93,7 +93,7 @@
               "displayName": ""
             },
             "properties": {
-              "AppInsight.InstrumentationKey": "[parameters('AppInsightInstrumentationKey')]",
+              "AppInsight.InstrumentationKey": "[parameters('AppInsightInstrumentationKey')]"
             }
           }
         ],

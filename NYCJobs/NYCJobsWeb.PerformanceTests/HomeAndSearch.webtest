@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebTest Name="HomeAndSearch" Id="56a1ba60-c8f0-4a54-aa2d-62948d7a1962" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="HomeAndSearch.1dd893d7-9796-4f9e-970e-6abff88b3ee9.rec.webtestresult" ResultsLocale="">
+<WebTest Name="HomeAndSearch" Id="56a1ba60-c8f0-4a54-aa2d-62948d7a1962" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="HomeAndSearch.71be90e9-76d5-4a27-b4c0-aa79fd848086.rec.webtestresult" ResultsLocale="">
   <Items>
     <Request Method="GET" Guid="00637c21-1e8c-4e9c-84d9-8b7872cc6371" Version="1.1" Url="http://acctraininggou.azurewebsites.net/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
       <DependentRequests>
@@ -347,6 +347,502 @@
         <QueryStringParameter Name="jsonso" Value="r3" RecordedValue="r3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
         <QueryStringParameter Name="key" Value="Ale3FH9FDwE06wrSZNoVR3HMM3mRlZbdX9ac9MxgwMSn7rMWZi_6TEaXIHui-0cG" RecordedValue="Ale3FH9FDwE06wrSZNoVR3HMM3mRlZbdX9ac9MxgwMSn7rMWZi_6TEaXIHui-0cG" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
       </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="edc52235-0d9c-4a78-885c-3c620989bf92" Version="1.1" Url="http://acctraininggou.azurewebsites.net/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="d7aadef4-1783-4c52-ba66-5f25863d4a0b" Version="1.1" Url="http://fonts.googleapis.com/css" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="family" Value="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" RecordedValue="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" CorrelationBinding="{{QueryStringParam3.family}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="3df7c115-ec08-48ad-91d5-c47e95fde177" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/oUan5VrEkpzIazlUe5ieaA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="050b3f6f-1388-4d28-af87-ff6d4452ae07" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="b8dde752-97f3-42d5-969b-2bf1188bc75b" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="6ad40b01-1524-4ea1-8506-edb180885c46" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="2881d793-a84e-4753-b0cd-7abbd5a8d945" Version="1.1" Url="http://acctraininggou.azurewebsites.net/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="462fff0e-57e3-4d73-921c-86d59deda1d4" Version="1.1" Url="http://ecn.dev.virtualearth.net/mapcontrol/v7.0/7.0.20160525132934.57/cursors/grab.cur" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="POST" Guid="84a789ed-072b-4537-a6c1-94fc8482da29" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/search" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="q" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="businessTitleFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="postingTypeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="salaryRangeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="sortType" Value="featured" RecordedValue="featured" CorrelationBinding="{{FormPostParam1.sortType}}" UrlEncode="True" />
+            <FormPostParameter Name="lat" Value="40.73622400000001" RecordedValue="40.73622400000001" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="lon" Value="-73.992511" RecordedValue="-73.992511" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="currentPage" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam2.currentPage}}" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="GET" Guid="62d347f3-7de3-4404-a9c1-fd8c7a87e7f0" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="version" Value="7.0.20160525132934.57" RecordedValue="7.0.20160525132934.57" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="auth" Value="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" RecordedValue="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam3.family" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?family=" />
+            <RuleParameter Name="EndsWith" Value="'" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.sortType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Rel" />
+            <RuleParameter Name="Index" Value="7" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.currentPage" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Wit" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.salaryRangeFacet" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Any" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.sortType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Rel" />
+            <RuleParameter Name="Index" Value="7" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.currentPage" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Wit" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="OPTIONS" Guid="1cddf6ad-29dd-4144-bc67-8642c680e7b5" Version="1.1" Url="https://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="6e15006e-5a75-43de-aaee-fc45348e1a78" Version="1.1" Url="https://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMgAwAC4ANwAxADYAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiAEgAcgAzAFcAdwAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGkAZAAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AdAB5AHAAZQAiADoAIgBCAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAGEAZwBlAG4AdABWAGUAcgBzAGkAbwBuACIAOgAiAHMAbgBpAHAAcABlAHQAOgAxAC4AMAAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAGoAYQB2AGEAcwBjAHIAaQBwAHQAOgAxAC4AMAAuADkAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGkAZAAiADoAIgAyAGMAYwA2AGcAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBpAGQAIgA6ACIALwBIAGcAdwA1ACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBBAHoAdQByAGUAIABTAGUAYQByAGMAaAAgAC0AIABKAG8AYgAgAFAAbwByAHQAYQBsACAARABlAG0AbwAiACwAIgB1AHIAbAAiADoAIgBoAHQAdABwADoALwAvAGEAYwBjAHQAcgBhAGkAbgBpAG4AZwBnAG8AdQAuAGEAegB1AHIAZQB3AGUAYgBzAGkAdABlAHMALgBuAGUAdAAvACIALAAiAGQAdQByAGEAdABpAG8AbgAiADoAIgAwADAAOgAwADAAOgAwADAALgA3ADEANwAiAH0AfQB9ACwAewAiAHQAaQBtAGUAIgA6ACIAMgAwADEANwAtADAANgAtADEAMwBUADEANAA6ADAANAA6ADIAMAAuADcAMgA2AFoAIgAsACIAaQBLAGUAeQAiADoAIgA0ADUAMwAwADcAYQA0ADkALQBmADUAOQAxAC0ANABhAGIAMQAtAGEAYgA4AGEALQAwADQAZgAzADgAZgAzAGYAMgAwAGEAMgAiACwAIgBuAGEAbQBlACIAOgAiAE0AaQBjAHIAbwBzAG8AZgB0AC4AQQBwAHAAbABpAGMAYQB0AGkAbwBuAEkAbgBzAGkAZwBoAHQAcwAuADQANQAzADAANwBhADQAOQBmADUAOQAxADQAYQBiADEAYQBiADgAYQAwADQAZgAzADgAZgAzAGYAMgAwAGEAMgAuAFAAYQBnAGUAdgBpAGUAdwBQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIgAsACIAdABhAGcAcwAiADoAewAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAGQAIgA6ACIASAByADMAVwB3ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAEIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AYQBnAGUAbgB0AFYAZQByAHMAaQBvAG4AIgA6ACIAcwBuAGkAcABwAGUAdAA6ADEALgAwACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAHMAZABrAFYAZQByAHMAaQBvAG4AIgA6ACIAagBhAHYAYQBzAGMAcgBpAHAAdAA6ADEALgAwAC4AOQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADIAYwBjADYAZwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgAvAEgAZwB3ADUAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBuAGEAbQBlACIAOgAiAC8AIgB9ACwAIgBkAGEAdABhACIAOgB7ACIAYgBhAHMAZQBUAHkAcABlACIAOgAiAFAAYQBnAGUAdgBpAGUAdwBQAGUAcgBmAG8AcgBtAGEAbgBjAGUARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBBAHoAdQByAGUAIABTAGUAYQByAGMAaAAgAC0AIABKAG8AYgAgAFAAbwByAHQAYQBsACAARABlAG0AbwAiACwAIgB1AHIAbAAiADoAIgBoAHQAdABwADoALwAvAGEAYwBjAHQAcgBhAGkAbgBpAG4AZwBnAG8AdQAuAGEAegB1AHIAZQB3AGUAYgBzAGkAdABlAHMALgBuAGUAdAAvACIALAAiAGQAdQByAGEAdABpAG8AbgAiADoAIgAwADAAOgAwADAAOgAwADAALgA3ADEANwAiACwAIgBwAGUAcgBmAFQAbwB0AGEAbAAiADoAIgAwADAAOgAwADAAOgAwADAALgA3ADEANwAiACwAIgBuAGUAdAB3AG8AcgBrAEMAbwBuAG4AZQBjAHQAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMAAwADEAIgAsACIAcwBlAG4AdABSAGUAcQB1AGUAcwB0ACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAzACIALAAiAHIAZQBjAGUAaQB2AGUAZABSAGUAcwBwAG8AbgBzAGUAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMAAwADUAIgAsACIAZABvAG0AUAByAG8AYwBlAHMAcwBpAG4AZwAiADoAIgAwADAAOgAwADAAOgAwADAALgA1ADkAMQAiAH0AfQB9AF0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="b857dea6-a1bc-45f1-b30a-0a15cd14cdc5" Version="1.1" Url="http://dev.virtualearth.net/REST/V1/Imagery/Copyright/en-us/Road/12/40.69068336947936/-74.12125703271483/40.78173347747284/-73.86376496728515" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="output" Value="json" RecordedValue="json" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dir" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonso" Value="r2" RecordedValue="r2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="AtAVzssUWTGDcLrlyj-lZKBbA_a3mA8xYfmvBY0n8rHviq03HJbZIiduUr8VL5NM" RecordedValue="AtAVzssUWTGDcLrlyj-lZKBbA_a3mA8xYfmvBY0n8rHviq03HJbZIiduUr8VL5NM" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9c48b990-9366-4528-bebb-2b11d301ea61" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/suggest" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="term" Value="analy" RecordedValue="analy" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="844aa802-7fb6-4290-a188-4fc907d9fd41" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/suggest" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="term" Value="analyst" RecordedValue="analyst" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="26d58788-7877-42ff-971c-0da618a9b02d" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/search" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="q" Value="analyst" RecordedValue="analyst" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="businessTitleFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="postingTypeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="salaryRangeFacet" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam3.salaryRangeFacet}}" UrlEncode="True" />
+        <FormPostParameter Name="sortType" Value="featured" RecordedValue="featured" CorrelationBinding="{{FormPostParam4.sortType}}" UrlEncode="True" />
+        <FormPostParameter Name="lat" Value="40.73622400000001" RecordedValue="40.73622400000001" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="lon" Value="-73.992511" RecordedValue="-73.992511" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="currentPage" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam5.currentPage}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="5a593d51-baee-48d8-abb4-f13031c573cd" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/jobdetails" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="f433c460-0af4-4b3e-bbfa-5eab119eaf6b" Version="1.1" Url="http://fonts.googleapis.com/css" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="family" Value="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" RecordedValue="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" CorrelationBinding="{{QueryStringParam55.family}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="2ba0c6e8-ba1c-4cca-bb66-50eee1249850" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/oUan5VrEkpzIazlUe5ieaA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="02903cba-1a4a-4f00-a870-67db348a9725" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="f84322f4-3e10-490a-8de2-69956bc67825" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="574d84b4-6d4b-4e40-9fba-86d57c735fbc" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="feb3f02f-ae97-4239-8c6b-0385423c3b53" Version="1.1" Url="http://acctraininggou.azurewebsites.net/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="1186c546-acde-4d1b-87b2-6564c88e4c2e" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/lookup" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="id" Value="ABF4D559-60F8-4D72-8DFC-13597541F57F" RecordedValue="ABF4D559-60F8-4D72-8DFC-13597541F57F" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam55.family" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?family=" />
+            <RuleParameter Name="EndsWith" Value="'" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id" Value="ABF4D559-60F8-4D72-8DFC-13597541F57F" RecordedValue="ABF4D559-60F8-4D72-8DFC-13597541F57F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="6c9a7128-a22a-4665-9e87-f7a56c70657d" Version="1.1" Url="https://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMgA2AC4AOAA5ADIAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgBIAHIAMwBXAHcAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAQgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBhAGcAZQBuAHQAVgBlAHIAcwBpAG8AbgAiADoAIgBzAG4AaQBwAHAAZQB0ADoAMQAuADAAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBqAGEAdgBhAHMAYwByAGkAcAB0ADoAMQAuADAALgA5ACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIAMgBjAGMANgBnACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAC8ASABnAHcANQAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAGkAZAAiADoAIgBtAEMAdgAwADEAIgAsACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIARwBFAFQAIAAvAGgAbwBtAGUALwBzAHUAZwBnAGUAcwB0ACIALAAiAHIAZQBzAHUAbAB0AEMAbwBkAGUAIgA6ACIAMgAwADAAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADEANAAxACIALAAiAHMAdQBjAGMAZQBzAHMAIgA6AHQAcgB1AGUALAAiAGQAYQB0AGEAIgA6ACIARwBFAFQAIAAvAGgAbwBtAGUALwBzAHUAZwBnAGUAcwB0AD8AdABlAHIAbQA9AGEAbgBhAGwAeQAiACwAIgB0AGEAcgBnAGUAdAAiADoAIgBhAGMAYwB0AHIAYQBpAG4AaQBuAGcAZwBvAHUALgBhAHoAdQByAGUAdwBlAGIAcwBpAHQAZQBzAC4AbgBlAHQAOgA4ADAAIgAsACIAdAB5AHAAZQAiADoAIgBBAGoAYQB4ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMgA3AC4ANgA1ADEAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgBIAHIAMwBXAHcAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAQgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBhAGcAZQBuAHQAVgBlAHIAcwBpAG8AbgAiADoAIgBzAG4AaQBwAHAAZQB0ADoAMQAuADAAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBqAGEAdgBhAHMAYwByAGkAcAB0ADoAMQAuADAALgA5ACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIAMgBjAGMANgBnACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAC8ASABnAHcANQAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAGkAZAAiADoAIgBZAEcAdgBUAFkAIgAsACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIARwBFAFQAIAAvAGgAbwBtAGUALwBzAHUAZwBnAGUAcwB0ACIALAAiAHIAZQBzAHUAbAB0AEMAbwBkAGUAIgA6ACIAMgAwADAAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADEANQAxACIALAAiAHMAdQBjAGMAZQBzAHMAIgA6AHQAcgB1AGUALAAiAGQAYQB0AGEAIgA6ACIARwBFAFQAIAAvAGgAbwBtAGUALwBzAHUAZwBnAGUAcwB0AD8AdABlAHIAbQA9AGEAbgBhAGwAeQBzAHQAIgAsACIAdABhAHIAZwBlAHQAIgA6ACIAYQBjAGMAdAByAGEAaQBuAGkAbgBnAGcAbwB1AC4AYQB6AHUAcgBlAHcAZQBiAHMAaQB0AGUAcwAuAG4AZQB0ADoAOAAwACIALAAiAHQAeQBwAGUAIgA6ACIAQQBqAGEAeAAiAH0AfQB9ACwAewAiAHQAaQBtAGUAIgA6ACIAMgAwADEANwAtADAANgAtADEAMwBUADEANAA6ADAANAA6ADIAOQAuADEANgAyAFoAIgAsACIAaQBLAGUAeQAiADoAIgA0ADUAMwAwADcAYQA0ADkALQBmADUAOQAxAC0ANABhAGIAMQAtAGEAYgA4AGEALQAwADQAZgAzADgAZgAzAGYAMgAwAGEAMgAiACwAIgBuAGEAbQBlACIAOgAiAE0AaQBjAHIAbwBzAG8AZgB0AC4AQQBwAHAAbABpAGMAYQB0AGkAbwBuAEkAbgBzAGkAZwBoAHQAcwAuADQANQAzADAANwBhADQAOQBmADUAOQAxADQAYQBiADEAYQBiADgAYQAwADQAZgAzADgAZgAzAGYAMgAwAGEAMgAuAFIAZQBtAG8AdABlAEQAZQBwAGUAbgBkAGUAbgBjAHkAIgAsACIAdABhAGcAcwAiADoAewAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAGQAIgA6ACIASAByADMAVwB3ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAEIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AYQBnAGUAbgB0AFYAZQByAHMAaQBvAG4AIgA6ACIAcwBuAGkAcABwAGUAdAA6ADEALgAwACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAHMAZABrAFYAZQByAHMAaQBvAG4AIgA6ACIAagBhAHYAYQBzAGMAcgBpAHAAdAA6ADEALgAwAC4AOQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADIAYwBjADYAZwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgAvAEgAZwB3ADUAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBuAGEAbQBlACIAOgAiAC8AIgB9ACwAIgBkAGEAdABhACIAOgB7ACIAYgBhAHMAZQBUAHkAcABlACIAOgAiAFIAZQBtAG8AdABlAEQAZQBwAGUAbgBkAGUAbgBjAHkARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgBpAGQAIgA6ACIAMQBMAFEAdABaACIALAAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAFAATwBTAFQAIAAvAGgAbwBtAGUALwBzAGUAYQByAGMAaAAiACwAIgByAGUAcwB1AGwAdABDAG8AZABlACIAOgAiADIAMAAwACIALAAiAGQAdQByAGEAdABpAG8AbgAiADoAIgAwADAAOgAwADAAOgAwADAALgA1ADgANAAiACwAIgBzAHUAYwBjAGUAcwBzACIAOgB0AHIAdQBlACwAIgBkAGEAdABhACIAOgAiAFAATwBTAFQAIAAvAGgAbwBtAGUALwBzAGUAYQByAGMAaAAiACwAIgB0AGEAcgBnAGUAdAAiADoAIgBhAGMAYwB0AHIAYQBpAG4AaQBuAGcAZwBvAHUALgBhAHoAdQByAGUAdwBlAGIAcwBpAHQAZQBzAC4AbgBlAHQAOgA4ADAAIgAsACIAdAB5AHAAZQAiADoAIgBBAGoAYQB4ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMwAxAC4ANwA1ADcAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUABhAGcAZQB2AGkAZQB3ACIALAAiAHQAYQBnAHMAIgA6AHsAIgBhAGkALgBzAGUAcwBzAGkAbwBuAC4AaQBkACIAOgAiAEgAcgAzAFcAdwAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAGkAZAAiADoAIgBiAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AdAB5AHAAZQAiADoAIgBCAHIAbwB3AHMAZQByACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAGEAZwBlAG4AdABWAGUAcgBzAGkAbwBuACIAOgAiAHMAbgBpAHAAcABlAHQAOgAxAC4AMAAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBzAGQAawBWAGUAcgBzAGkAbwBuACIAOgAiAGoAYQB2AGEAcwBjAHIAaQBwAHQAOgAxAC4AMAAuADkAIgAsACIAYQBpAC4AdQBzAGUAcgAuAGkAZAAiADoAIgAyAGMAYwA2AGcAIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBpAGQAIgA6ACIASgBjADgANwA2ACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AbgBhAG0AZQAiADoAIgAvAGgAbwBtAGUALwBqAG8AYgBkAGUAdABhAGkAbABzACIAfQAsACIAZABhAHQAYQAiADoAewAiAGIAYQBzAGUAVAB5AHAAZQAiADoAIgBQAGEAZwBlAHYAaQBlAHcARABhAHQAYQAiACwAIgBiAGEAcwBlAEQAYQB0AGEAIgA6AHsAIgB2AGUAcgAiADoAMgAsACIAbgBhAG0AZQAiADoAIgBBAHoAdQByAGUAIABTAGUAYQByAGMAaAAgAC0AIABKAG8AYgAgAFAAbwByAHQAYQBsACAARABlAG0AbwAiACwAIgB1AHIAbAAiADoAIgBoAHQAdABwADoALwAvAGEAYwBjAHQAcgBhAGkAbgBpAG4AZwBnAG8AdQAuAGEAegB1AHIAZQB3AGUAYgBzAGkAdABlAHMALgBuAGUAdAAvAGgAbwBtAGUALwBqAG8AYgBkAGUAdABhAGkAbABzAD8AaQBkAD0AQQBCAEYANABEADUANQA5AC0ANgAwAEYAOAAtADQARAA3ADIALQA4AEQARgBDAC0AMQAzADUAOQA3ADUANAAxAEYANQA3AEYAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADMAMAA2ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMwAxAC4ANwA2ADIAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgBIAHIAMwBXAHcAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAQgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBhAGcAZQBuAHQAVgBlAHIAcwBpAG8AbgAiADoAIgBzAG4AaQBwAHAAZQB0ADoAMQAuADAAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBqAGEAdgBhAHMAYwByAGkAcAB0ADoAMQAuADAALgA5ACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIAMgBjAGMANgBnACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAEoAYwA4ADcANgAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwBoAG8AbQBlAC8AagBvAGIAZABlAHQAYQBpAGwAcwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAEEAegB1AHIAZQAgAFMAZQBhAHIAYwBoACAALQAgAEoAbwBiACAAUABvAHIAdABhAGwAIABEAGUAbQBvACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AYQBjAGMAdAByAGEAaQBuAGkAbgBnAGcAbwB1AC4AYQB6AHUAcgBlAHcAZQBiAHMAaQB0AGUAcwAuAG4AZQB0AC8AaABvAG0AZQAvAGoAbwBiAGQAZQB0AGEAaQBsAHMAPwBpAGQAPQBBAEIARgA0AEQANQA1ADkALQA2ADAARgA4AC0ANABEADcAMgAtADgARABGAEMALQAxADMANQA5ADcANQA0ADEARgA1ADcARgAiACwAIgBkAHUAcgBhAHQAaQBvAG4AIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMwAwADYAIgAsACIAcABlAHIAZgBUAG8AdABhAGwAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMwAwADYAIgAsACIAbgBlAHQAdwBvAHIAawBDAG8AbgBuAGUAYwB0ACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAxACIALAAiAHMAZQBuAHQAUgBlAHEAdQBlAHMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAAMwAiACwAIgByAGUAYwBlAGkAdgBlAGQAUgBlAHMAcABvAG4AcwBlACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAAMAAzACIALAAiAGQAbwBtAFAAcgBvAGMAZQBzAHMAaQBuAGcAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMgA2ADEAIgB9AH0AfQBdAA==</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="1ceeea5e-4e93-4f12-9f09-4a7017489f4a" Version="1.1" Url="http://ecn.dev.virtualearth.net/mapcontrol/v7.0/7.0.20160525132934.57/cursors/grab.cur" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="50ab00e2-4f1c-43dd-a977-7cde841b6456" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="version" Value="7.0.20160525132934.57" RecordedValue="7.0.20160525132934.57" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="auth" Value="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" RecordedValue="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3ad45300-aaa8-430e-b17d-834672d35275" Version="1.1" Url="http://dev.virtualearth.net/REST/v1/Elevation/BoundingRect/40.750118,-74.003563,40.756880,-73.994637/14/14" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonso" Value="r2" RecordedValue="r2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="Ajmt_BlejZ7JLq7K5ZWh8JHBwwHOKAocBhkSw1ZXjtlyPH2Dfie-eekLcqmC1zMZ" RecordedValue="Ajmt_BlejZ7JLq7K5ZWh8JHBwwHOKAocBhkSw1ZXjtlyPH2Dfie-eekLcqmC1zMZ" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7875ce8b-0a14-4cef-8aba-4e2d91bf4adc" Version="1.1" Url="http://dev.virtualearth.net/REST/V1/Imagery/Copyright/en-us/SynthWithLabels/17/40.75180691029996/-74.00047771632673/40.7552745829239/-73.99725906550885" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="output" Value="json" RecordedValue="json" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dir" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonso" Value="r3" RecordedValue="r3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="Ajmt_BlejZ7JLq7K5ZWh8JHBwwHOKAocBhkSw1ZXjtlyPH2Dfie-eekLcqmC1zMZ" RecordedValue="Ajmt_BlejZ7JLq7K5ZWh8JHBwwHOKAocBhkSw1ZXjtlyPH2Dfie-eekLcqmC1zMZ" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="85765c8e-83e3-40d0-ab4b-0611d491b583" Version="1.1" Url="http://acctraininggou.azurewebsites.net/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="91a9f0ab-d128-4c8c-8b6a-c83e2d4990a2" Version="1.1" Url="http://fonts.googleapis.com/css" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="family" Value="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" RecordedValue="Lato:400,700,400italic,700italic|Roboto+Condensed:400,700" CorrelationBinding="{{QueryStringParam124.family}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="e3f6da8d-8e53-4152-950e-35e4b9797fb9" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/oUan5VrEkpzIazlUe5ieaA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="519e5f39-26ac-4257-84c6-319455d40161" Version="1.1" Url="http://fonts.gstatic.com/s/lato/v13/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="aa433b2d-a7ca-4c75-bbe2-26f93b372688" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="cb28857b-570f-46c1-a4ff-687fe8dd4376" Version="1.1" Url="http://fonts.gstatic.com/s/robotocondensed/v14/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="2244a4aa-a9e1-4112-85a3-fca214e2af5e" Version="1.1" Url="http://acctraininggou.azurewebsites.net/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="1b4d6377-bb5f-4ebc-a7cb-f243bd42d7d6" Version="1.1" Url="http://ecn.dev.virtualearth.net/mapcontrol/v7.0/7.0.20160525132934.57/cursors/grab.cur" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+        </Request>
+        <Request Method="POST" Guid="9764149d-d7e5-40fc-a6c3-3728e7fde908" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/search" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="q" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="businessTitleFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="postingTypeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="salaryRangeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="sortType" Value="featured" RecordedValue="featured" CorrelationBinding="{{FormPostParam6.sortType}}" UrlEncode="True" />
+            <FormPostParameter Name="lat" Value="40.73622400000001" RecordedValue="40.73622400000001" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="lon" Value="-73.992511" RecordedValue="-73.992511" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="currentPage" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam7.currentPage}}" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/home/jobdetails?id=ABF4D559-60F8-4D72-8DFC-13597541F57F" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam124.family" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?family=" />
+            <RuleParameter Name="EndsWith" Value="'" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam6.sortType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Rel" />
+            <RuleParameter Name="Index" Value="7" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam7.currentPage" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Wit" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam8.salaryRangeFacet" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Any" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam9.sortType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;Rel" />
+            <RuleParameter Name="Index" Value="7" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="031b05b4-1c9c-4828-a030-c8b58d8e3e76" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="version" Value="7.0.20160525132934.57" RecordedValue="7.0.20160525132934.57" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="auth" Value="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" RecordedValue="Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="72500374-7281-4954-9460-1c0d7a4d6701" Version="1.1" Url="https://dc.services.visualstudio.com/v2/track" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">WwB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoAMwAxAC4ANwA2ADkAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgBIAHIAMwBXAHcAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAQgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBhAGcAZQBuAHQAVgBlAHIAcwBpAG8AbgAiADoAIgBzAG4AaQBwAHAAZQB0ADoAMQAuADAAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBqAGEAdgBhAHMAYwByAGkAcAB0ADoAMQAuADAALgA5ACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIAMgBjAGMANgBnACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAEoAYwA4ADcANgAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwBoAG8AbQBlAC8AagBvAGIAZABlAHQAYQBpAGwAcwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUgBlAG0AbwB0AGUARABlAHAAZQBuAGQAZQBuAGMAeQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAGkAZAAiADoAIgBDAEIAbwBGAG0AIgAsACIAdgBlAHIAIgA6ADIALAAiAG4AYQBtAGUAIgA6ACIAUABPAFMAVAAgAC8AaABvAG0AZQAvAGwAbwBvAGsAdQBwACIALAAiAHIAZQBzAHUAbAB0AEMAbwBkAGUAIgA6ACIAMgAwADAAIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADAANwA2ACIALAAiAHMAdQBjAGMAZQBzAHMAIgA6AHQAcgB1AGUALAAiAGQAYQB0AGEAIgA6ACIAUABPAFMAVAAgAC8AaABvAG0AZQAvAGwAbwBvAGsAdQBwACIALAAiAHQAYQByAGcAZQB0ACIAOgAiAGEAYwBjAHQAcgBhAGkAbgBpAG4AZwBnAG8AdQAuAGEAegB1AHIAZQB3AGUAYgBzAGkAdABlAHMALgBuAGUAdAA6ADgAMAAiACwAIgB0AHkAcABlACIAOgAiAEEAagBhAHgAIgB9AH0AfQAsAHsAIgB0AGkAbQBlACIAOgAiADIAMAAxADcALQAwADYALQAxADMAVAAxADQAOgAwADQAOgA0ADMALgAwADkAOABaACIALAAiAGkASwBlAHkAIgA6ACIANAA1ADMAMAA3AGEANAA5AC0AZgA1ADkAMQAtADQAYQBiADEALQBhAGIAOABhAC0AMAA0AGYAMwA4AGYAMwBmADIAMABhADIAIgAsACIAbgBhAG0AZQAiADoAIgBNAGkAYwByAG8AcwBvAGYAdAAuAEEAcABwAGwAaQBjAGEAdABpAG8AbgBJAG4AcwBpAGcAaAB0AHMALgA0ADUAMwAwADcAYQA0ADkAZgA1ADkAMQA0AGEAYgAxAGEAYgA4AGEAMAA0AGYAMwA4AGYAMwBmADIAMABhADIALgBQAGEAZwBlAHYAaQBlAHcAIgAsACIAdABhAGcAcwAiADoAewAiAGEAaQAuAHMAZQBzAHMAaQBvAG4ALgBpAGQAIgA6ACIASAByADMAVwB3ACIALAAiAGEAaQAuAGQAZQB2AGkAYwBlAC4AaQBkACIAOgAiAGIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgB0AHkAcABlACIAOgAiAEIAcgBvAHcAcwBlAHIAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AYQBnAGUAbgB0AFYAZQByAHMAaQBvAG4AIgA6ACIAcwBuAGkAcABwAGUAdAA6ADEALgAwACIALAAiAGEAaQAuAGkAbgB0AGUAcgBuAGEAbAAuAHMAZABrAFYAZQByAHMAaQBvAG4AIgA6ACIAagBhAHYAYQBzAGMAcgBpAHAAdAA6ADEALgAwAC4AOQAiACwAIgBhAGkALgB1AHMAZQByAC4AaQBkACIAOgAiADIAYwBjADYAZwAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAGkAZAAiADoAIgB1AFcAbgBzAE4AIgAsACIAYQBpAC4AbwBwAGUAcgBhAHQAaQBvAG4ALgBuAGEAbQBlACIAOgAiAC8AIgB9ACwAIgBkAGEAdABhACIAOgB7ACIAYgBhAHMAZQBUAHkAcABlACIAOgAiAFAAYQBnAGUAdgBpAGUAdwBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAEEAegB1AHIAZQAgAFMAZQBhAHIAYwBoACAALQAgAEoAbwBiACAAUABvAHIAdABhAGwAIABEAGUAbQBvACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AYQBjAGMAdAByAGEAaQBuAGkAbgBnAGcAbwB1AC4AYQB6AHUAcgBlAHcAZQBiAHMAaQB0AGUAcwAuAG4AZQB0AC8AIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADQAMAA2ACIAfQB9AH0ALAB7ACIAdABpAG0AZQAiADoAIgAyADAAMQA3AC0AMAA2AC0AMQAzAFQAMQA0ADoAMAA0ADoANAAzAC4AMQAwADQAWgAiACwAIgBpAEsAZQB5ACIAOgAiADQANQAzADAANwBhADQAOQAtAGYANQA5ADEALQA0AGEAYgAxAC0AYQBiADgAYQAtADAANABmADMAOABmADMAZgAyADAAYQAyACIALAAiAG4AYQBtAGUAIgA6ACIATQBpAGMAcgBvAHMAbwBmAHQALgBBAHAAcABsAGkAYwBhAHQAaQBvAG4ASQBuAHMAaQBnAGgAdABzAC4ANAA1ADMAMAA3AGEANAA5AGYANQA5ADEANABhAGIAMQBhAGIAOABhADAANABmADMAOABmADMAZgAyADAAYQAyAC4AUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQAiACwAIgB0AGEAZwBzACIAOgB7ACIAYQBpAC4AcwBlAHMAcwBpAG8AbgAuAGkAZAAiADoAIgBIAHIAMwBXAHcAIgAsACIAYQBpAC4AZABlAHYAaQBjAGUALgBpAGQAIgA6ACIAYgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBkAGUAdgBpAGMAZQAuAHQAeQBwAGUAIgA6ACIAQgByAG8AdwBzAGUAcgAiACwAIgBhAGkALgBpAG4AdABlAHIAbgBhAGwALgBhAGcAZQBuAHQAVgBlAHIAcwBpAG8AbgAiADoAIgBzAG4AaQBwAHAAZQB0ADoAMQAuADAAIgAsACIAYQBpAC4AaQBuAHQAZQByAG4AYQBsAC4AcwBkAGsAVgBlAHIAcwBpAG8AbgAiADoAIgBqAGEAdgBhAHMAYwByAGkAcAB0ADoAMQAuADAALgA5ACIALAAiAGEAaQAuAHUAcwBlAHIALgBpAGQAIgA6ACIAMgBjAGMANgBnACIALAAiAGEAaQAuAG8AcABlAHIAYQB0AGkAbwBuAC4AaQBkACIAOgAiAHUAVwBuAHMATgAiACwAIgBhAGkALgBvAHAAZQByAGEAdABpAG8AbgAuAG4AYQBtAGUAIgA6ACIALwAiAH0ALAAiAGQAYQB0AGEAIgA6AHsAIgBiAGEAcwBlAFQAeQBwAGUAIgA6ACIAUABhAGcAZQB2AGkAZQB3AFAAZQByAGYAbwByAG0AYQBuAGMAZQBEAGEAdABhACIALAAiAGIAYQBzAGUARABhAHQAYQAiADoAewAiAHYAZQByACIAOgAyACwAIgBuAGEAbQBlACIAOgAiAEEAegB1AHIAZQAgAFMAZQBhAHIAYwBoACAALQAgAEoAbwBiACAAUABvAHIAdABhAGwAIABEAGUAbQBvACIALAAiAHUAcgBsACIAOgAiAGgAdAB0AHAAOgAvAC8AYQBjAGMAdAByAGEAaQBuAGkAbgBnAGcAbwB1AC4AYQB6AHUAcgBlAHcAZQBiAHMAaQB0AGUAcwAuAG4AZQB0AC8AIgAsACIAZAB1AHIAYQB0AGkAbwBuACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADQAMAA2ACIALAAiAHAAZQByAGYAVABvAHQAYQBsACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADQAMAA2ACIALAAiAG4AZQB0AHcAbwByAGsAQwBvAG4AbgBlAGMAdAAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAAMQAiACwAIgBzAGUAbgB0AFIAZQBxAHUAZQBzAHQAIgA6ACIAMAAwADoAMAAwADoAMAAwAC4AMAAwADIAIgAsACIAcgBlAGMAZQBpAHYAZQBkAFIAZQBzAHAAbwBuAHMAZQAiADoAIgAwADAAOgAwADAAOgAwADAALgAwADAANAAiACwAIgBkAG8AbQBQAHIAbwBjAGUAcwBzAGkAbgBnACIAOgAiADAAMAA6ADAAMAA6ADAAMAAuADMANQA5ACIAfQB9AH0AXQA=</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="ae22cdee-bf97-4662-a400-1eb011a1f01e" Version="1.1" Url="http://dev.virtualearth.net/REST/V1/Imagery/Copyright/en-us/Road/12/40.69068336947936/-74.12125703271483/40.78173347747284/-73.86376496728515" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="output" Value="json" RecordedValue="json" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dir" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonp" Value="microsoftMapsNetworkCallback" RecordedValue="microsoftMapsNetworkCallback" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="jsonso" Value="r2" RecordedValue="r2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="key" Value="AoBVQr_swJlArb9nSIiOTjhSwSitw9r8pwPUtUxk8M52ozK5eb6_5obAd99Z6cSn" RecordedValue="AoBVQr_swJlArb9nSIiOTjhSwSitw9r8pwPUtUxk8M52ozK5eb6_5obAd99Z6cSn" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="785272e7-a85c-41e3-ae77-e745e6034408" Version="1.1" Url="http://acctraininggou.azurewebsites.net/home/search" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://acctraininggou.azurewebsites.net/" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="q" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="businessTitleFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="postingTypeFacet" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="salaryRangeFacet" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam8.salaryRangeFacet}}" UrlEncode="True" />
+        <FormPostParameter Name="sortType" Value="featured" RecordedValue="featured" CorrelationBinding="{{FormPostParam9.sortType}}" UrlEncode="True" />
+        <FormPostParameter Name="lat" Value="40.73622400000001" RecordedValue="40.73622400000001" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="lon" Value="-73.992511" RecordedValue="-73.992511" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="currentPage" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
     </Request>
   </Items>
   <ValidationRules>

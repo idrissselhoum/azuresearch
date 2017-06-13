@@ -58,6 +58,9 @@
     <None Include="HomeAndSearch.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="NYCJobsLoadTest.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="PerformanceTestSettings.testsettings" />
   </ItemGroup>
   <Choose>

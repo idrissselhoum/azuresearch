@@ -14,6 +14,9 @@
     "sites_stagingslotname": {
       "defaultValue": "staging",
       "type": "string"
+    },
+    "AppInsightInstrumentationKey": {
+      "type": "string"
     }
   },
     "variables": {},
@@ -78,6 +81,20 @@
             "properties": {},
             "resources": [
             ]
+          },
+          {
+            "name": "appsettings",
+            "type": "config",
+            "apiVersion": "2015-08-01",
+            "dependsOn": [
+              "[resourceId('Microsoft.Web/sites', parameters('site_name'))]"
+            ],
+            "tags": {
+              "displayName": ""
+            },
+            "properties": {
+              "AppInsight.InstrumentationKey": "[parameters('AppInsightInstrumentationKey')]"
+            }
           }
         ],
         "dependsOn": []

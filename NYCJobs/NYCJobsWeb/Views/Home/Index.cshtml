@@ -1,4 +1,4 @@
-﻿<script type="text/javascript" src="https://www.bing.com/mapspreview/sdkrelease/mapcontrol?v=8.0"></script>
+﻿
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/jquery-ui.min.js"></script>
@@ -90,16 +90,19 @@
 </script>
 
 <script type="text/javascript">
+
     var businessTitleFacet, postingTypeFacet, salaryRangeFacet, sortType, currentPage, zipCode, maxDistance;
     var map = null;
     var lat = 40.736224;
     var lon = -73.992511;
     var pinLayer, infoboxLayer;
     var pinInfobox = null;
-    var infoboxLayer = new Microsoft.Maps.EntityCollection();
-    var pinLayer = new Microsoft.Maps.EntityCollection();
+   
 
-    $(function () {
+    function GetMap() {
+        var infoboxLayer = new Microsoft.Maps.EntityCollection();
+        var pinLayer = new Microsoft.Maps.EntityCollection();
+
         // Load the initial data
         currentPage = 1;
         businessTitleFacet = '';
@@ -123,10 +126,7 @@
                 Search();
             }
         });
-
-
-
-    });
+    }
 
     function Search() {
         $("#job_details_div").html("Loading...");
@@ -188,6 +188,7 @@
     }
 
     function UpdateMap(data) {
+        var infoboxLayer = new Microsoft.Maps.EntityCollection();
         // Iterate the results and add to map
         while (map.entities.getLength() > 0) {
             try {
@@ -418,7 +419,7 @@
     }
 
 </script>
-
+<script type="text/javascript" src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap" async defer></script>
 <div class="container">
     <div class="row">
         <div class="col-sm-4 page-sidebar">

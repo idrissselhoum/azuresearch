@@ -109,7 +109,7 @@
             "displayName": ""
           },
           "properties": {
-            "AppInsight.InstrumentationKey": "[reference(resourceId('Microsoft.Insights/components', variables(parameters('appinsight_name'))), '2014-04-01').InstrumentationKey]"
+            "AppInsight.InstrumentationKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appinsight_name')), '2014-04-01').InstrumentationKey]"
           }
         }
       ],

@@ -66,13 +66,6 @@ namespace NYCJobsWeb.Controllers.Tests
         }
 
         [TestMethod()]
-        public void SuggestTest()
-        {
-            //var result = controller.Suggest("Analyst", true);
-            Assert.Inconclusive();
-        }
-
-        [TestMethod()]
         public void LookUpTest()
         {
             controller.LookUp("");

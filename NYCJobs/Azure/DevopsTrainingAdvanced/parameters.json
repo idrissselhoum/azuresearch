@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "serverfarm_name": {
-      "value": "SPDevOpsTraining"
+      "value": ""
     },
     "appinsight_name": {
-      "value": "accdevopstrainingEq3"
+      "value": ""
     },
     "site_name": {
-      "value": "accdevopstrainingEq3"
+      "value": ""
     },
     "sites_stagingslotname": {
       "value": "staging"

@@ -67,7 +67,7 @@ namespace NYCJobsWeb.AcceptanceTests.Steps
             Page = new HomePage(_driver, appUrl);
 
             Page.GoTo();
-            Check.That("Azure Search - Job Portal Demo").Equals(_driver.Title);
+            Check.That("NYC Jobs - Home Page").Equals(_driver.Title);
         }
 
         [When(@"I have entered Analyst in the request form and press search button")]

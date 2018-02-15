@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.Extensibility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Microsoft.ApplicationInsights.SnapshotCollector;
-using Microsoft.ApplicationInsights;
+
 
 namespace NYCJobsWeb
 {
@@ -18,7 +19,7 @@ namespace NYCJobsWeb
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             //Set AppInsight Instrumentation Key
-            Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active.InstrumentationKey = WebConfigurationManager.AppSettings["AppInsight.InstrumentationKey"];
+            TelemetryConfiguration.Active.InstrumentationKey = WebConfigurationManager.AppSettings["AppInsight.InstrumentationKey"];
         }
 
 

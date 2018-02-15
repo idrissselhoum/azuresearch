@@ -20,12 +20,12 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <ApplicationInsightsResourceId>/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/VS-paasnet-axaazurefoundry-Group/providers/microsoft.insights/components/NYCJobsWeb</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/53687335-bdd2-4ca2-b55b-fce4f75f0777/resourcegroups/AccTrainingDemo/providers/microsoft.insights/components/acctr-int</ApplicationInsightsResourceId>
     <TargetFrameworkProfile />
     <Use64BitIISExpress />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/17295c84-15bb-41ed-b439-299c3c50a05f/resourcegroups/VS-paasnet-axaazurefoundry-Group/providers/microsoft.insights/components/NYCJobsWeb</ApplicationInsightsAnnotationResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/53687335-bdd2-4ca2-b55b-fce4f75f0777/resourceGroups/AccTrainingDemo/providers/microsoft.insights/components/acctr-int</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +76,9 @@
     </Reference>
     <Reference Include="Microsoft.ApplicationInsights, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.5.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Search, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.Search.3.0.4\lib\net452\Microsoft.Azure.Search.dll</HintPath>
@@ -206,7 +209,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
     <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />

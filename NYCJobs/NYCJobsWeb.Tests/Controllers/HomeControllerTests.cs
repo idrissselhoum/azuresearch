@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace NYCJobsWeb.Controllers.Tests
 {
@@ -30,20 +31,38 @@ namespace NYCJobsWeb.Controllers.Tests
         public void JobDetailsTest()
         {
             controller.JobDetails();
-            Assert.Inconclusive();
         }
 
         [TestMethod()]
         public void SearchTest()
         {
-            Assert.Inconclusive();
-        }
+            string q = "*";
+            string businessTitleFacet = "";
+            string postingTypeFacet = "";
+            string salaryRangeFacet = "";
+            string sortType = "featured";
+            double lat = 40.736224;
+            double lon = -73.99251;
+            int currentPage = 1;
+            int maxDistance = 0;
+            int zipCode = 10001;
 
-        [TestMethod()]
-        public void SuggestTest()
-        {
-            //var result = controller.Suggest("Analyst", true);
-            Assert.Inconclusive();
+            System.Web.Mvc.JsonResult result = (JsonResult)controller.Search(
+                q,
+                businessTitleFacet,
+                postingTypeFacet,
+                salaryRangeFacet,
+                sortType,
+                lat,
+                lon,
+                currentPage,
+                zipCode,
+                maxDistance);
+
+            NYCJobsWeb.Models.NYCJob data = (NYCJobsWeb.Models.NYCJob)result.Data;
+
+            Assert.IsTrue(data.Facets.Count > 0);
+            Assert.IsTrue(data.Results.Count > 0);
         }
 
         [TestMethod()]

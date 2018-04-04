@@ -1,5 +1,6 @@
 ﻿using AzureSearchHelpers;
 using BingGeocoder;
+using Microsoft.ApplicationInsights;
 using NYCJobsWeb.Models;
 using System;
 using System.Collections.Generic;
@@ -16,16 +17,20 @@ namespace NYCJobsWeb.Controllers
     /// </summary>
     public class HomeController : Controller
     {
+        private TelemetryClient telemetry = new TelemetryClient();
+
         private JobsSearchHelper _jobsSearch = new JobsSearchHelper();
 
         // GET: Home
         public ActionResult Index()
         {
+            telemetry.TrackEvent("HomePage");
             return View();
         }
 
         public ActionResult JobDetails()
         {
+            telemetry.TrackEvent("JobDetails");
             return View();
         }
 
@@ -33,6 +38,8 @@ namespace NYCJobsWeb.Controllers
             string sortType = "", double lat = 40.736224, double lon = -73.99251, int currentPage = 0, int zipCode = 10001,
             int maxDistance = 0)
         {
+            telemetry.TrackEvent("SearchJob");
+
             // If blank search, assume they want to search everything
             if (string.IsNullOrWhiteSpace(q))
                 q = "*";

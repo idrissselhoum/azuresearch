@@ -1,18 +1,17 @@
-﻿<script src="http://twitter.github.io/typeahead.js/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
-
+﻿
 <script>
-    var lat = 40.736224;
-    var lon = -73.992511;
-    var pinLayer, infoboxLayer;
-    var pinInfobox = null;
-    var infoboxLayer = new Microsoft.Maps.EntityCollection();
-    var pinLayer = new Microsoft.Maps.EntityCollection();
+    function GetMap() {
 
-    $(function () {
+        var lat = 40.736224;
+        var lon = -73.992511;
+        var pinLayer, infoboxLayer;
+        var pinInfobox = null;
+        var infoboxLayer = new Microsoft.Maps.EntityCollection();
+        var pinLayer = new Microsoft.Maps.EntityCollection();
+
         LookUp();
-    });
-    
+    }
+
     function LookUp() {
         // Get center of map to use to score the search results
         var query_string = {};
@@ -20,20 +19,18 @@
         var vars = query.split("&");
         if (vars.length > 0) {
             $.post('/home/lookup',
-            {
-                id: vars[0].substring(3)
-            },
-            function (data) {
-                UpdateJobDetails(data);
-            });
+                {
+                    id: vars[0].substring(3)
+                },
+                function (data) {
+                    UpdateJobDetails(data);
+                });
         }
 
     }
 
-    function CleanText(text)
-    {
-        while (text.indexOf('â€¢') > -1)
-        {
+    function CleanText(text) {
+        while (text.indexOf('â€¢') > -1) {
             text = text.replace('â€¢', '<br />- ');
         }
 
@@ -45,7 +42,7 @@
             text = text.replace('â€™', "'");
         }
 
-        
+
         return text;
     }
 
@@ -59,7 +56,7 @@
         $("#work_location").html(data.Result.work_location);
         $("#business_title").html(data.Result.business_title);
         $("#civil_service_title").html(data.Result.civil_service_title);
-        
+
 
         var salary = '$' + data.Result.salary_range_from.toLocaleString();
         if (data.Result.salary_range_from != data.Result.salary_range_to)
@@ -73,7 +70,7 @@
         $("#level").html(data.Result.level);
         $("#num_of_positions").html(data.Result.num_of_positions);
         $("#posting_type").html(data.Result.posting_type);
-        
+
         $("#job_description").html(CleanText(data.Result.job_description));
 
         $("#minimum_qual_requirements").html(CleanText(data.Result.minimum_qual_requirements));
@@ -89,11 +86,11 @@
         $("#work_location_main").html(data.Result.work_location);
 
         map = new Microsoft.Maps.Map(document.getElementById("jobs-single-page-map"),
-        {
-            credentials: "Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV",
-            center: new Microsoft.Maps.Location(data.Result.geo_location.Latitude, data.Result.geo_location.Longitude),
-            zoom: 17
-        });
+            {
+                credentials: "Ahsk5r2qulRcUifmyxT4cUXkA8ZB8glLnkzpGKWRip2YUkAbwx0KDr-boIBSJrBV",
+                center: new Microsoft.Maps.Location(data.Result.geo_location.Latitude, data.Result.geo_location.Longitude),
+                zoom: 17
+            });
 
         map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.birdseye });
         var latLon = new Microsoft.Maps.Location(data.Result.geo_location.Latitude, data.Result.geo_location.Longitude);
@@ -105,6 +102,8 @@
 
 
 </script>
+
+<script type="text/javascript" src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap" async defer></script>
 <div id="page-content">
     <div class="container">
         <div class="row">
@@ -223,4 +222,3 @@
         </div>
     </div> <!-- end .container -->
 </div> <!-- end #page-content -->
-

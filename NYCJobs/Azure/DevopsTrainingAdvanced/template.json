@@ -113,7 +113,9 @@
           }
         }
       ],
-      "dependsOn": []
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms' , parameters('serverfarm_name'))]"
+      ]
     }
  ]
 }

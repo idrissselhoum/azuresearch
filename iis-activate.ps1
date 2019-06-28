@@ -22,6 +22,26 @@ configuration AdminRestAp {
             Name = "Web-Asp-Net45"
             Ensure = "Present"
     }
+    
+     xWebSite 'AzureSearchWebSite' {
+            Name = 'AzureSearch'
+            BindingInfo = @( MSFT_xWebBindingInformation
+
+                {
+                    Protocol = 'HTTP'
+                    Port = 80
+                }
+            )
+
+            PhysicalPath = 'C:\inetpub\wwwroot'
+            ApplicationPool = 'CompanyXAppPool'
+            DependsOn = '[xWebAppPool]AzureSearchAppPool'
+
+        }
+
+        xWebAppPool 'AzureSearchAppPool' {
+            Name = 'AzureSearchAppPool'
+        }
  
         
 }

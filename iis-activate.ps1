@@ -1,6 +1,8 @@
 configuration AdminRestAp {
 
 
+Import-DscResource -ModuleName 'xWebAdministration'
+
     Node "localhost" {
         <#
             Install windows features
@@ -22,33 +24,37 @@ configuration AdminRestAp {
             Name = "Web-Asp-Net45"
             Ensure = "Present"
     }
+
     
-     xWebSite 'AzureSearchWebSite' {
+
+    xWebsite 'AzureSearchWebSite' {
+            Ensure = "Present"
             Name = 'AzureSearch'
             BindingInfo = @( MSFT_xWebBindingInformation
 
                 {
                     Protocol = 'HTTP'
-                    Port = 80
+                    Port = 8080
                 }
             )
 
             PhysicalPath = 'C:\inetpub\wwwroot'
-            ApplicationPool = 'CompanyXAppPool'
+            ApplicationPool = 'AzureSearchAppPool'
             DependsOn = '[xWebAppPool]AzureSearchAppPool'
 
         }
 
-        xWebAppPool 'AzureSearchAppPool' {
+       xWebAppPool 'AzureSearchAppPool' {
             Name = 'AzureSearchAppPool'
+            Ensure = "Present"
         }
+
  
-        
+ 
 }
 
 }
 
 
-AdminRestAp -OutputPath "C:\vstsagent"
-Start-DscConfiguration -Path "C:\vstsagent"
-
+AdminRestAp -OutputPath "C:\DSC"
+Start-DscConfiguration -Path "C:\DSC" -Force -Verbose -Wait

@@ -25,6 +25,7 @@ Import-DscResource -ModuleName 'xWebAdministration'
             Ensure = "Present"
     }
 
+    
 
     xWebsite 'AzureSearchWebSite' {
             Ensure = "Present"
@@ -33,7 +34,7 @@ Import-DscResource -ModuleName 'xWebAdministration'
 
                 {
                     Protocol = 'HTTP'
-                    Port = 80
+                    Port = 8080
                 }
             )
 
